@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.clear-fix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  margin: 8;
+  padding: 0;
+  color: #545459;
+  font: normal 16px Helvetica, Arial, sans-serif;
+}
+
+body > section {
+  width: 1000px;
+  margin: 0 auto;
+  border: 2px solid #999;
+  padding: 20px;
+}
+
+section h1 {
+  font-size: 24px;
+}
+
+section h2 {
+  font-size: 20px;
+}
+
+section h3 {
+  font-size: 1rem;
+}
+
+section h1,
+section h2,
+section h3 {
+  color: #ce4a4a;
+  margin: 20px 0;
+}
+
+section p {
+  line-height: 35px;
+  margin-bottom: 25px;
+}

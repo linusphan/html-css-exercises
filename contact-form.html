@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact form</title>
+  <style>
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      display: block;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <form action="" method="post">
+    <fieldset>
+      <label for="first-name">First name:</label>
+      <input type="text" name="first-name" id="first-name" required>
+
+      <label for="last-name">Last name:</label>
+      <input type="text" name="last-name" id="last-name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="city">City:</label>
+      <input type="text" name="city" id="city" required>
+
+      <label for="state">State:</label>
+      <select name="state" id="state" required>
+        <option>AK</option>
+        <option>AL</option>
+        <option>AR</option>
+        <option>AZ</option>
+        <option>CA</option>
+        <option>CO</option>
+        <option>CT</option>
+        <option>DC</option>
+        <option>DE</option>
+        <option>FL</option>
+        <option>GA</option>
+        <option>HI</option>
+        <option>IA</option>
+        <option>ID</option>
+        <option>IL</option>
+        <option>IN</option>
+        <option>KS</option>
+        <option>KY</option>
+        <option>LA</option>
+        <option>MA</option>
+        <option>MD</option>
+        <option>ME</option>
+        <option>MI</option>
+        <option>MN</option>
+        <option>MO</option>
+        <option>MS</option>
+        <option>MT</option>
+        <option>NC</option>
+        <option>ND</option>
+        <option>NE</option>
+        <option>NH</option>
+        <option>NJ</option>
+        <option>NM</option>
+        <option>NV</option>
+        <option>NY</option>
+        <option>OH</option>
+        <option>OK</option>
+        <option>OR</option>
+        <option>PA</option>
+        <option>RI</option>
+        <option>SC</option>
+        <option>SD</option>
+        <option>TN</option>
+        <option>TX</option>
+        <option>UT</option>
+        <option>VA</option>
+        <option>VT</option>
+        <option>WA</option>
+        <option>WI</option>
+        <option>WV</option>
+        <option>WY</option>
+      </select>
+      
+      <label for="zipcode">Zipcode</label>
+      <input type="text" name="zipcode" id="zipcode" maxlength="5" required>
+
+      <div>
+        <p>Which of these colors do you like best?</p>
+        <label for="red"><input type="radio" name="colors" value="red" checked>Red</label>
+        <label for="red"><input type="radio" name="colors" value="green">Green</label>
+        <label for="red"><input type="radio" name="colors" value="blue">Blue</label>
+      </div>
+
+      <label for="technologies">Which web technologies do you want to learn?</label>
+      <select name="technologies" id="technologies" multiple size="5" required>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>Javascript</option>
+        <option>Ruby</option>
+        <option>Rails</option>
+      </select>
+
+      <label for="comment">Comment:</label>
+      <textarea name="comment" id="comment" cols="80" rows="6"
+                placeholder="Optional message."></textarea>
+
+      <input type="hidden" name="date" value="2018-08-03">
+      <input type="submit" value="Send">
+    </fieldset>
+  </form>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Forms practice</title>
+</head>
+<body>
+  <form action="#" method="post">
+    <fieldset>
+      <dl>
+        <dt><label for="first-name">First name</label></dt>
+        <dd><input type="text" id="first-name" name="first-name" required></dd>
+
+        <dt><label for="last-name">Last Name</label></dt>
+        <dd><input type="text" id="last-name" name="last-name" required></dd>
+
+        <dt><label for="email">Email address</label></dt>
+        <dd>
+          <input type="email" name="email" id="email"
+               autocomplete="off" autocorrect="off"
+               autocapitalize="none" required>
+        </dd>
+
+        <dt><label for="phone">Phone number</label></dt>
+        <dd><input type="tel" name="phone" id="phone" autocomplete="off" required placeholder="###-###-####"></dd>
+        
+        <dt><label for="phone-type">Phone Type</label></dt>
+        <dd>
+          <select name="phone-type" id="phone-type">
+            <option selected>Home</option>
+            <option>Business</option>
+            <option>Mobile</option>
+          </select>
+        </dd>
+
+        <dt><label for="message">Message</label></dt>
+        <dd>
+          <textarea name="message" id="message" rows="6" cols="80"
+                    placeholder="Type your message here"></textarea>
+        </dd>
+      </dl>
+      <input type="submit" value="send">
+    </fieldset>
+  </form>
+
+  <form action="#" method="get">
+    <fieldset>
+      <label for="search">Search for</label>
+      <input type="search" name="search" id="search">
+
+      <input type="radio" name="category" id="tv" value="tv">
+      <label for="tv">TV</label>
+      <input type="radio" name="category" id="movies" value="movies">
+      <label for="movies">Movies</label>
+      <input type="radio" name="category" id="music" value="music">
+      <label for="music">Music</label>
+
+      <input type="submit" value="Search">
+    </fieldset>
+  </form>
+
+  <form>
+    <fieldset>
+      <dl>
+        <dt><label for="movie">Movie</label></dt>
+        <dd>
+          <select name="movie" id="movie" size="4">
+            <option value="Looper">Looper</option>
+            <option value="Frozen">Frozen</option>
+            <option value="Tommy Boy">Tommy Boy</option>
+            <option value="Alien">Alien</option>
+          </select>
+        </dd>
+
+        <dt><label for="rating">Rating</label></dt>
+        <dd>
+          <input type="number" id="rating" name="rating" min="1" max="5">
+        </dd>
+      </dl>
+
+      <label>
+        <input type="checkbox" name="favorite" value="favorite">
+        Add to my favorites
+      </label>
+
+      <input type="submit" value="Rate movie">
+    </fieldset>
+  </form>
+
+  <form action="#" method="get">
+    <fieldset>
+      <ul>
+        <li>
+          <label>Category
+            <select name="category">
+              <option>Core</option>
+              <option>Plugins</option>
+              <option>Libraries</option>
+              <option>Conventions</option>
+              <option>Reviews</option>
+              <option>Opinion</option>
+              <option>People</option>
+            </select>
+          </label>
+        </li>
+
+        <li>
+          <label>
+            Tag words
+            <select name="tag-words" multiple>
+              <option>HTML</option>
+              <option>CSS</option>
+              <option>Javascript</option>
+              <option>Ruby</option>
+              <option>Rails</option>
+              <option>Python</option>
+              <option>Django</option>
+            </select>
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+  </form>
+
+  <form action="#" method="get">
+    <fieldset>
+      <h1>Category</h1>
+      <ul>
+        <li>
+          <label>
+            <input type="radio" name="category" value="core">
+            Core
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="category" value="plugins">
+            Plugins and Libraries
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="category" value="conventions">
+            Conventions
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="category" value="reviews">
+            Reviews
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="category" value="opinion">
+            Opinion
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="category" value="people">
+            People
+          </label>
+        </li>
+      </ul>
+
+      <h1>Tags</h1>
+      <ul>
+        <li>
+          <label>
+            <input type="checkbox" name="html">
+            HTML
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="css">
+            CSS
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="javascript">
+            Javascript
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="Ruby">
+            Ruby
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="rails">
+            Rails
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="python">
+            Python
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="django">
+            Django
+          </label>
+        </li>
+      </ul>
+
+      <input type="submit" value="Filter">
+      <input type="reset">
+    </fieldset>
+  </form>
+</body>
+</html>
